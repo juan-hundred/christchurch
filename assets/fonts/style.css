@@ -1,0 +1,15 @@
+@font-face {
+   font-family: 'Barlow-Medium';
+   font-display: swap;
+   src: url('Barlow-Medium/font.ttf');
+}
+@font-face {
+   font-family: 'Barlow-SemiBold';
+   font-display: swap;
+   src: url('Barlow-SemiBold/font.ttf');
+}
+@font-face {
+   font-family: 'Barlow-Light';
+   font-display: swap;
+   src: url('Barlow-Light/font.ttf');
+}
