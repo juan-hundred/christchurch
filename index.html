@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="assets/recaptcha.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=3JORFn"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=3JORFn" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=Q0wWBx"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=Q0wWBx" type="text/css">
 
   
   
@@ -97,54 +97,25 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="slider3 cid-uq9DZAGmjZ mbr-fullscreen" id="slider3-1k">
+<section data-bs-version="5.1" class="header1 churchm5 cid-urtzcIMkes mbr-fullscreen" data-bg-video="https://youtu.be/q5IG1Jns6oE" id="header1-2i">
+
     
-    <div class="carousel slide carousel-fade" id="uqDMIIDO1S" data-ride="carousel" data-bs-ride="carousel" data-interval="4000" data-bs-interval="4000">
-        <ol class="carousel-indicators">
-            <li data-slide-to="0" data-bs-slide-to="0" class="active" data-target="#uqDMIIDO1S" data-bs-target="#uqDMIIDO1S"></li>
-            <li data-slide-to="1" data-bs-slide-to="1" data-target="#uqDMIIDO1S" data-bs-target="#uqDMIIDO1S"></li>
-            <li data-slide-to="2" data-bs-slide-to="2" data-target="#uqDMIIDO1S" data-bs-target="#uqDMIIDO1S"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item slider-image item active">
-                <div class="item-wrapper">
-                    <img class="d-block w-100" src="assets/images/summit-church-713x600.png" alt="">
+
+    <div class="mbr-fallback-image disabled"></div>
+    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(0, 0, 0);">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="title-wrapper">
+                    <h1 class="mbr-section-title mbr-fonts-style display-1"><strong>Christ Church Summit</strong></h1>
+                    <p class="mbr-text mbr-fonts-style display-7">"No matter who you are or where you are on life's journey, you are welcome here. <br>Christ Church is a diverse faith community inspiring our members to explore their own spirituality, <br>grow in faith, and serve others."
+                    </p>
                     
-                    <div class="carousel-caption">
-                        <h5 class="mbr-section-subtitle mbr-fonts-style display-1">Christ Church Summit</h5>
-                        <p class="mbr-section-text mbr-fonts-style display-7">"No matter who you are or where you are on life's journey, you are welcome here. Christ Church is a diverse faith community inspiring our members to explore their own spirituality, grow in faith, and serve others."</p>
-                    </div>
                 </div>
-            </div>
-            <div class="carousel-item slider-image item">
-                <div class="item-wrapper">
-                    <img class="d-block w-100" src="assets/images/diverse-1280x723.jpg" alt="">
-                    
-                    <div class="carousel-caption">
-                        <h5 class="mbr-section-subtitle mbr-fonts-style display-1">Christ Church Summit</h5>
-                        <p class="mbr-section-text mbr-fonts-style display-7">"No matter who you are or where you are on life's journey, you are welcome here. Christ Church is a diverse faith community inspiring our members to explore their own spirituality, grow in faith, and serve others."</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item slider-image item">
-                <div class="item-wrapper">
-                    
-                    
-                    <div class="carousel-caption">
-                        <h5 class="mbr-section-subtitle mbr-fonts-style display-1">Christ Church Summit</h5>
-                        <p class="mbr-section-text mbr-fonts-style display-7">"No matter who you are or where you are on life's journey, you are welcome here. Christ Church is a diverse faith community inspiring our members to explore their own spirituality, grow in faith, and serve others."</p>
-                    </div>
-                <a href="staff.html"><img class="d-block w-100" src="assets/images/copy-of-chuckmarkjulie-1280x720.jpg" alt="Ministers"></a></div>
             </div>
         </div>
-        <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" data-bs-slide="prev" href="#uqDMIIDO1S">
-            <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
-            <span class="sr-only visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control carousel-control-next" role="button" data-slide="next" data-bs-slide="next" href="#uqDMIIDO1S">
-            <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
-            <span class="sr-only visually-hidden">Next</span>
-        </a>
     </div>
 </section>
 
@@ -523,6 +494,7 @@
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/ytplayer/index.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/vimeoplayer/player.js"></script>
   <script src="assets/playervimeo/vimeo_player.js"></script>
   <script src="assets/embla/embla.min.js"></script>
   <script src="assets/embla/script.js"></script>
@@ -534,11 +506,20 @@
   
   
   <script>
+const timeoutDuration = 24 * 60 * 60 * 1000;
 const myTimeout = setTimeout(hideMe, 9000);
+var isSeen = false;
+
 x = document.getElementById("hideme");
 
 function hideMe() {
-  x.style.display = 'none';
+
+if (x.style.display !== 'none') {
+    isSeen = true;
+    x.style.display = 'none';
+    
+ }
+ 
 }
 </script>
 </body>
