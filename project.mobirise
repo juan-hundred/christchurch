@@ -167,7 +167,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -251,7 +251,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -260,7 +262,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -287,7 +290,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -334,7 +338,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -505,9 +510,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
@@ -694,11 +700,11 @@
           "_sourceTheme": "churchm5",
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1 churchm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#fdfcfa\">\n            <input type=\"video\" title=\"Video\" value=\"https://youtu.be/q5IG1Jns6oE\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Christ Church Summit</b></h1>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\"No matter who you are or where you are on life's journey, you are welcome here. <br>Christ Church is a diverse faith community inspiring our members to explore their own spirituality, <br>grow in faith, and serve others.\"\n                    </p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                            <span class=\"mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn\"></span>\n                            READ MORE ABOUT CHURCH\n                        </a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "urtzcIMkes",
+          "_anchor": "header1-2i",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "header1-2i"
+          "_params": {}
         },
         {
           "_name": "video5",
@@ -1856,7 +1862,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -1940,7 +1946,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -1949,7 +1957,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -1976,7 +1985,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -2023,7 +2033,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -2194,9 +2205,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
@@ -2811,7 +2823,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -2895,7 +2907,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -2904,7 +2918,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -2931,7 +2946,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -2978,7 +2994,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -3149,9 +3166,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
@@ -3673,7 +3691,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -3757,7 +3775,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -3766,7 +3786,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -3793,7 +3814,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -3840,7 +3862,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -4011,9 +4034,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
@@ -4834,7 +4858,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -4918,7 +4942,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -4927,7 +4953,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -4954,7 +4981,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -5001,7 +5029,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -5172,9 +5201,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
@@ -5688,7 +5718,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -5772,7 +5802,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -5781,7 +5813,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -5808,7 +5841,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -5855,7 +5889,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -6026,9 +6061,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
@@ -7032,7 +7068,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -7116,7 +7152,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -7125,7 +7163,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -7152,7 +7191,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -7199,7 +7239,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -7370,9 +7411,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
@@ -8044,7 +8086,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -8128,7 +8170,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -8137,7 +8181,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -8164,7 +8209,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -8211,7 +8257,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -8382,9 +8429,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
@@ -8877,7 +8925,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -8961,7 +9009,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -8970,7 +9020,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -8997,7 +9048,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -9044,7 +9096,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -9215,9 +9268,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
@@ -9668,7 +9722,7 @@
               "position": "relative"
             },
             ".nav-right": {
-              "min-width": "750px"
+              "text-align": "center"
             },
             ".container": {
               "display": "flex",
@@ -9752,7 +9806,9 @@
               },
               ".navbar-collapse": {
                 "justify-content": "flex-end",
-                "z-index": "1"
+                "z-index": "1",
+                "overflow": "hidden",
+                "text-align": "center"
               },
               "&.collapsed": {
                 "justify-content": "center",
@@ -9761,7 +9817,8 @@
                 },
                 "&.opened": {
                   ".dropdown-menu": {
-                    "top": "0"
+                    "top": "0",
+                    "text-align": "center"
                   },
                   "@media (min-width: 992px)": {
                     "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
@@ -9788,7 +9845,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -9835,7 +9893,8 @@
                 },
                 "ul.navbar-nav": {
                   "li": {
-                    "margin": "auto"
+                    "margin": "auto",
+                    "text-align": "center"
                   }
                 },
                 ".dropdown-menu .dropdown-item": {
@@ -10006,9 +10065,10 @@
                 }
               },
               ".nav-item .nav-link:hover::before": {
-                "width": "175%",
+                "width": "100%",
                 "max-width": "calc(100% ~\"+\" 2rem)",
-                "left": "-1rem"
+                "left": "-1rem",
+                "text-align": "center"
               }
             }
           },
